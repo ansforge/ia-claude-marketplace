@@ -1,0 +1,38 @@
+name: Validate Plugin Licenses
+
+on:
+  pull_request:
+    paths:
+      - 'plugins/**'
+  push:
+    branches: [main]
+    paths:
+      - 'plugins/**'
+
+permissions:
+  contents: read
+
+jobs:
+  validate-licenses:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check every plugin has an Apache 2.0 LICENSE file
+        run: |
+          set -euo pipefail
+          missing=()
+          for plugin_dir in plugins/*/; do
+            plugin="${plugin_dir%/}"
+            if [[ ! -f "$plugin/LICENSE" ]]; then
+              missing+=("$plugin")
+            fi
+          done
+          if [[ "${#missing[@]}" -gt 0 ]]; then
+            echo "::error::The following plugins are missing a LICENSE file:"
+            for p in "${missing[@]}"; do
+              echo "  - $p"
+            done
+            exit 1
+          fi
+          echo "All $(ls -d plugins/*/ | wc -l) plugins have a LICENSE file."

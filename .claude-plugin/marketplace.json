@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/ansforge/ia-claude-marketplace/marketplace.schema.json",
+  "name": "claude-plugins-ans-official",
+  "description": "Directory of popular Claude Code extensions including development tools, productivity plugins, and MCP integrations",
+  "owner": {
+    "name": "ANS",
+    "email": "ans-forge@esante.gouv.fr"
+  },
+  "plugins": [
+    {
+      "name": "ANS review",
+      "description": "Automate review.",
+      "author": {
+        "name": "ANS"
+      },
+      "category": "test",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ansforge/ia-claude-marketplace.git",
+        "path": "plugins/code-review"
+      }
+    }
+  ]
+}

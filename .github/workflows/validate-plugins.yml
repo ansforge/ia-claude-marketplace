@@ -1,0 +1,42 @@
+name: Validate Plugins
+
+on:
+  pull_request:
+    paths:
+      - '.claude-plugin/**'
+      - '*/.claude-plugin/**'
+      - '*/agents/**'
+      - '*/skills/**'
+      - '*/commands/**'
+  push:
+    branches: [main]
+    paths:
+      - '.claude-plugin/**'
+  # `validate` is a required status check on main. Bump PRs are opened with
+  # GITHUB_TOKEN, which doesn't fire on:pull_request (recursion guard), so the
+  # path-filtered trigger above never reports on them and the PR would be
+  # blocked forever. The bump workflow dispatches this against each per-entry
+  # bump branch instead; the check run lands on the branch HEAD (= PR head)
+  # and satisfies the required check. The validate job runs unconditionally,
+  # so a dispatch always reports.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: anthropics/claude-plugins-community/.github/actions/validate-plugins@f846a0bcb0e721b1f93d60e8b73e91dafc4a1e87
+        with:
+          marketplace-path: .claude-plugin/marketplace.json
+          # Official curated marketplace: SHA-pin (I5) is a HARD error.
+          # I8/I11 are warnings until the 15 known vendored-path/name issues
+          # are cleaned up (see PR body); tighten to "I1 I3" after.
+          warn-invariants: "I1 I3 I8 I11"
+          claude-cli-version: latest
