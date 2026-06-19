@@ -108,13 +108,15 @@ Claude Code est un assistant IA puissant, mais c'est sa capacité à être <stro
   <div class="install-step">
     <span class="step-num">1</span>
     <div>
-      <strong>Ouvrez Claude Code</strong> dans votre terminal ou IDE
+      <strong>Ajoutez le marketplace ANS</strong> à Claude Code (une seule fois, par machine)
+      <pre class="install-code">/plugin add-marketplace https://github.com/ansforge/ia-claude-marketplace</pre>
+      <p class="install-note">Cette commande enregistre le marketplace sous l'identifiant <code>claude-plugins-ans-official</code>. Elle n'est à exécuter qu'une seule fois.</p>
     </div>
   </div>
   <div class="install-step">
     <span class="step-num">2</span>
     <div>
-      <strong>Installez via la commande</strong>
+      <strong>Installez le plugin souhaité</strong>
       <pre class="install-code">/plugin install ans-review@claude-plugins-ans-official</pre>
     </div>
   </div>

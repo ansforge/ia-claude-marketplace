@@ -11,6 +11,9 @@ permalink: /skills-internes/
 </p>
 
 <div class="install-banner">
+  <strong>Prérequis :</strong> ajoutez d'abord le marketplace (une seule fois) :
+  <code>/plugin add-marketplace https://github.com/ansforge/ia-claude-marketplace</code>
+  <br>
   <strong>Installation :</strong>
   <code>/plugin install &lt;nom&gt;@claude-plugins-ans-official</code>
 </div>

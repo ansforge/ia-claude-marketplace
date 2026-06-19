@@ -11,11 +11,23 @@ A curated directory of high-quality plugins for Claude Code.
 
 ## Installation
 
-Plugins can be installed directly from this marketplace via Claude Code's plugin system.
+### 1. Ajouter le marketplace
 
-To install, run `/plugin install {plugin-name}@claude-plugins-official`
+Enregistrez ce marketplace dans Claude Code (une seule fois par machine) :
 
-or browse for the plugin in `/plugin > Discover`
+```
+/plugin add-marketplace https://github.com/ansforge/ia-claude-marketplace
+```
+
+Cette commande enregistre le marketplace sous l'identifiant `claude-plugins-ans-official`.
+
+### 2. Installer un plugin
+
+```
+/plugin install {plugin-name}@claude-plugins-ans-official
+```
+
+ou parcourir les plugins disponibles via `/plugin > Discover`
 
 ## Contributing
 
