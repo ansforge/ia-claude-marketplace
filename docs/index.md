@@ -128,12 +128,15 @@ Claude Code est un assistant IA puissant, mais c'est sa capacité à être <stro
 </div>
 
 <style>
-/* ── Base ── */
-.wrapper, .wrapper p, .wrapper li { font-size: 1.3rem; }
+/* ── Base — force over theme ── */
+.page-content,
+.page-content p,
+.page-content li,
+.page-content td { font-size: 1.25rem !important; line-height: 1.75 !important; }
 
 /* ── Hero ── */
 .hero-section { padding: 1.5rem 0 2rem; }
-.hero-lead { font-size: 1.5rem; line-height: 1.75; max-width: 820px; }
+.hero-lead { font-size: 1.5rem !important; line-height: 1.75 !important; max-width: 820px; }
 
 /* ── Why grid ── */
 .why-grid {
@@ -148,9 +151,9 @@ Claude Code est un assistant IA puissant, mais c'est sa capacité à être <stro
   border-radius: 0.5rem;
   border-left: 4px solid #0053b3;
 }
-.why-icon { font-size: 2.5rem; margin-bottom: 0.6rem; }
-.why-card h3 { font-size: 1.45rem; font-weight: 700; margin: 0 0 0.5rem; }
-.why-card p { font-size: 1.3rem; color: #495057; margin: 0; line-height: 1.75; }
+.why-icon { font-size: 2.5rem !important; margin-bottom: 0.6rem; }
+.why-card h3 { font-size: 1.4rem !important; font-weight: 700; margin: 0 0 0.5rem; }
+.why-card p  { font-size: 1.25rem !important; color: #495057; margin: 0; line-height: 1.75 !important; }
 
 /* ── Skills grid ── */
 .skills-grid {
@@ -174,25 +177,19 @@ Claude Code est un assistant IA puissant, mais c'est sa capacité à être <stro
 .skill-card--curated  { border-top: 4px solid #005e46; }
 
 .skill-header { display: flex; align-items: flex-start; gap: 1.1rem; }
-.skill-icon { font-size: 3rem; line-height: 1; flex-shrink: 0; margin-top: 2px; }
-.skill-title { font-size: 1.5rem; font-weight: 700; margin: 0 0 0.3rem; }
+.skill-icon   { font-size: 3rem !important; line-height: 1; flex-shrink: 0; margin-top: 2px; }
+.skill-title  { font-size: 1.45rem !important; font-weight: 700; margin: 0 0 0.3rem; }
 .skill-title a { color: #0053b3; text-decoration: none; }
 .skill-title a:hover { text-decoration: underline; }
 .skill-title--plain { color: #212529; }
-.skill-command {
-  font-size: 1.1rem;
-  color: #6c757d;
-  background: #f1f3f5;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-}
+.skill-command { font-size: 1.05rem !important; color: #6c757d; background: #f1f3f5; padding: 0.2rem 0.5rem; border-radius: 4px; }
 
-.skill-desc { font-size: 1.3rem; color: #495057; margin: 0; line-height: 1.75; flex: 1; }
+.skill-desc   { font-size: 1.25rem !important; color: #495057; margin: 0; line-height: 1.75 !important; flex: 1; }
 .skill-footer { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: auto; }
 
 /* ── Badges ── */
 .badge {
-  font-size: 1rem;
+  font-size: 1rem !important;
   padding: 0.35rem 0.85rem;
   border-radius: 999px;
   font-weight: 600;
@@ -212,7 +209,7 @@ Claude Code est un assistant IA puissant, mais c'est sa capacité à être <stro
   padding: 1.1rem 1.4rem;
   background: #f8f9fa;
   border-radius: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1.25rem !important;
 }
 .step-num {
   display: inline-flex;
@@ -225,7 +222,7 @@ Claude Code est un assistant IA puissant, mais c'est sa capacité à être <stro
   background: #0053b3;
   color: #fff;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.15rem !important;
   flex-shrink: 0;
 }
 .install-code {
@@ -233,7 +230,7 @@ Claude Code est un assistant IA puissant, mais c'est sa capacité à être <stro
   padding: 0.45rem 0.85rem;
   background: #e9ecef;
   border-radius: 0.3rem;
-  font-size: 1.15rem;
+  font-size: 1.1rem !important;
   display: inline-block;
 }
 </style>
