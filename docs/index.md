@@ -133,11 +133,11 @@ Une sélection de compétences IA de confiance, issues de Claude Code ou de la c
 
 <style>
 /* ── Base ── */
-.wrapper { font-size: 1.05rem; }
+.wrapper, .wrapper p, .wrapper li { font-size: 1.2rem; }
 
 /* ── Hero ── */
 .hero-section { padding: 1.5rem 0 2rem; }
-.hero-lead { font-size: 1.25rem; line-height: 1.75; max-width: 780px; }
+.hero-lead { font-size: 1.45rem; line-height: 1.75; max-width: 820px; }
 
 /* ── Why grid ── */
 .why-grid {
@@ -152,9 +152,9 @@ Une sélection de compétences IA de confiance, issues de Claude Code ou de la c
   border-radius: 0.5rem;
   border-left: 4px solid #0053b3;
 }
-.why-icon { font-size: 2rem; margin-bottom: 0.6rem; }
-.why-card h3 { font-size: 1.05rem; font-weight: 700; margin: 0 0 0.5rem; }
-.why-card p { font-size: 1rem; color: #495057; margin: 0; line-height: 1.65; }
+.why-icon { font-size: 2.5rem; margin-bottom: 0.6rem; }
+.why-card h3 { font-size: 1.35rem; font-weight: 700; margin: 0 0 0.5rem; }
+.why-card p { font-size: 1.2rem; color: #495057; margin: 0; line-height: 1.75; }
 
 /* ── Skills grid ── */
 .skills-grid {
@@ -178,26 +178,26 @@ Une sélection de compétences IA de confiance, issues de Claude Code ou de la c
 .skill-card--curated  { border-top: 4px solid #005e46; }
 
 .skill-header { display: flex; align-items: flex-start; gap: 1.1rem; }
-.skill-icon { font-size: 2.5rem; line-height: 1; flex-shrink: 0; margin-top: 2px; }
-.skill-title { font-size: 1.15rem; font-weight: 700; margin: 0 0 0.3rem; }
+.skill-icon { font-size: 2.75rem; line-height: 1; flex-shrink: 0; margin-top: 2px; }
+.skill-title { font-size: 1.3rem; font-weight: 700; margin: 0 0 0.3rem; }
 .skill-title a { color: #0053b3; text-decoration: none; }
 .skill-title a:hover { text-decoration: underline; }
 .skill-title--plain { color: #212529; }
 .skill-command {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #6c757d;
   background: #f1f3f5;
   padding: 0.15rem 0.45rem;
   border-radius: 4px;
 }
 
-.skill-desc { font-size: 1rem; color: #495057; margin: 0; line-height: 1.65; flex: 1; }
+.skill-desc { font-size: 1.15rem; color: #495057; margin: 0; line-height: 1.7; flex: 1; }
 .skill-footer { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: auto; }
 
 /* ── Badges ── */
 .badge {
-  font-size: 0.8rem;
-  padding: 0.25rem 0.65rem;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.75rem;
   border-radius: 999px;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -216,20 +216,20 @@ Une sélection de compétences IA de confiance, issues de Claude Code ou de la c
   padding: 1.1rem 1.4rem;
   background: #f8f9fa;
   border-radius: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .step-num {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.1rem;
-  height: 2.1rem;
-  min-width: 2.1rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  min-width: 2.3rem;
   border-radius: 50%;
   background: #0053b3;
   color: #fff;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.1rem;
   flex-shrink: 0;
 }
 .install-code {
@@ -237,7 +237,7 @@ Une sélection de compétences IA de confiance, issues de Claude Code ou de la c
   padding: 0.45rem 0.85rem;
   background: #e9ecef;
   border-radius: 0.3rem;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   display: inline-block;
 }
 </style>
