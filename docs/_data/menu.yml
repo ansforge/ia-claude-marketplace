@@ -1,7 +1,5 @@
 header:
-  - title: "Superpowers"
-    url: "/ia-claude-marketplace/"
-  - title: "Documentation"
-    url: "/ia-claude-marketplace/docs/"
+  - title: "Accueil"
+    url: "/"
   - title: "GitHub"
     url: "https://github.com/ansforge/ia-claude-marketplace"
