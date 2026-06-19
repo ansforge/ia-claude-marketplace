@@ -159,7 +159,7 @@ Une sélection de compétences IA de confiance, issues de Claude Code ou de la c
 /* ── Skills grid ── */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin: 1.5rem 0 2rem;
 }

@@ -1,0 +1,118 @@
+<footer class="site-footer">
+  <div class="wrapper footer-inner">
+
+    <div class="footer-col footer-col--brand">
+      <p class="footer-title">ANS Claude Marketplace</p>
+      <p class="footer-desc">{{ site.description | escape }}</p>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-heading">Navigation</p>
+      <ul class="footer-links">
+        <li><a href="{{ '/' | relative_url }}">Accueil</a></li>
+        <li><a href="{{ '/skills-internes/' | relative_url }}">Skills internes</a></li>
+        <li><a href="{{ '/skills-externes/' | relative_url }}">Skills externes</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-heading">Ressources</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/ansforge/ia-claude-marketplace" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://code.claude.com/docs/en/plugins" target="_blank" rel="noopener">Documentation Claude Code</a></li>
+        <li><a href="https://esante.gouv.fr" target="_blank" rel="noopener">esante.gouv.fr</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-heading">Contact</p>
+      <ul class="footer-links">
+        {%- if site.author.name %}
+        <li>{{ site.author.name | escape }}</li>
+        {%- endif %}
+        {%- if site.author.email %}
+        <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+        {%- endif %}
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="wrapper">
+      <span>© {{ 'now' | date: "%Y" }} Agence du Numérique en Santé — Licence MIT</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+.site-footer {
+  background: #1a1a2e;
+  color: #cdd3da;
+  margin-top: 4rem;
+  font-size: 1rem;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 2.5rem;
+  padding: 3rem 0 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer-col--brand .footer-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.6rem;
+}
+.footer-col--brand .footer-desc {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #9aa5b4;
+  margin: 0;
+}
+
+.footer-heading {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fff;
+  margin: 0 0 0.85rem;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-links li { font-size: 0.95rem; color: #9aa5b4; }
+.footer-links a {
+  color: #9aa5b4;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.footer-links a:hover { color: #fff; }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 1rem 0;
+  font-size: 0.85rem;
+  color: #6b7685;
+}
+</style>
