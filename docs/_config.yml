@@ -1,0 +1,34 @@
+remote_theme: ansforge/ans-jekyll-theme
+
+title: "Superpowers — ANS Claude Marketplace"
+description: "Les plugins officiels ANS pour amplifier Claude Code"
+baseurl: "/ia-claude-marketplace"
+url: "https://ansforge.github.io"
+
+lang: fr
+
+author:
+  name: "ANS — Agence du Numérique en Santé"
+  email: "ans-forge@esante.gouv.fr"
+
+collections:
+  superpowers:
+    output: true
+    permalink: /superpowers/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: superpowers
+    values:
+      layout: page
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
