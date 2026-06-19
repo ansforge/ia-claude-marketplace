@@ -1,5 +1,9 @@
 header:
   - title: "Accueil"
     url: "/"
+  - title: "Skills internes"
+    url: "/skills-internes/"
+  - title: "Skills externes"
+    url: "/skills-externes/"
   - title: "GitHub"
     url: "https://github.com/ansforge/ia-claude-marketplace"
